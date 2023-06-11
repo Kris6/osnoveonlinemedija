@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea Website - Kristijan Keckes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!----HEADER SA MENIJEM-->
+    <section class="header">
+        <nav>
+            <a href="page.html"><img src="images/Chelsea.png"></a>
+            <div class="meni" id="meniLink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>    <!----IKONICA ZA IZLAZAK IZ MENIJA NA MALIM UREDJAIMA-->
+                <ul>
+                    <li><a href="page.html">POČETNA</a></li>
+                    <li><a href="page1.html">O KLUBU</a></li>
+                    <li><a href="page2.html">VESTI</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>   <!----IKONICA ZA MENI NA MALIM UREDJAIMA-->
+        </nav>
+       
+        <div class="text-box">
+            <h1>Chelsea Football Club</h1>                          <!----NASLOV STRANICE SA PARAGRAFOM-->
+            <p> Pride  Of London<br>LONDON IS BLUE</p>
+            <a href="page2.html" class="hero-btn">Pogledaj Nove Vesti</a>   <!----DUGME KOJE VODI NA STRANICU VESTI-->
+        </div>
+        <script src="Hide-Show_menu.js"></script>
+    </section>
+
+    <!-----Deo pocetne strane Trofeji----->
+    
+    <section class="trofeji">
+        <h1>Trofeji kluba</h1>
+        <p>Chelsea je osvojio sve!</p>
+
+        <!-----kolone koje sadrze trofeje----->
+        <div class="red">
+            <div class="trofeji-kol">
+                <img src="images/11.png">
+                <h3>Premier League (6)</h3>
+                <p>1955, 2005, 2006, 2010, 2015, 2017</p>
+            </div>
+            <div class="trofeji-kol">
+                <img src="images/922-9224938_champion-league-trophy.png">
+                <h3>UEFA Champions League (2)</h3>
+                <p>2012, 2021</p>
+            </div>
+            <div class="trofeji-kol">
+                <img src="images/FACup1.png">
+                <h3>FA Cup (8)</h3>
+                <p>1970, 1997, 2000, 2007, 2009, 2010, 2012, 2018</p>
+            </div>
+            <div class="trofeji-kol">
+                <img src="images/EuropaL.png">
+                <h3>UEFA Europa League(2)</h3>
+                <p>2013, 2019</p>
+            </div>
+        </div>
+        <a href="page1.html" class="hero-btn2">Pogledaj sve</a> <!-----dugme koje vodi do stranica o klubu----->
+    </section>
+
+    <!-----Deo pocetne strane Legende kluba----->
+
+    <section class="legende">
+        <h1>Legende kluba</h1>
+        <p>Neki od najuticajnijih i najboljih igrača ovog kluba</p>
+    <!-----kolone sa legendama kluba i njihovim rekordima----->
+        <div class="red">
+            <div class="legende-kol">
+                <img src="images/petrcech.png">
+                <div class="layer">
+                    <h3>Petr Cech</h3>
+                    <p>Najviše utakmica bez primljenog gola<br>u istoriji Premier League (202)</p>
+                </div>
+            </div>
+            <div class="legende-kol">
+                <img src="images/franklampard.png">
+                <div class="layer">
+                    <h3>Frank Lampard</h3>
+                    <p>Najbolji strelac u istoriji kluba (211)<br>Najviše nastupa za klub (609)</p>
+                </div>
+            </div>
+            <div class="legende-kol">
+                <img src="images/didierdrogba.png">
+                <div class="layer">
+                    <h3>Didier Drogba</h3>
+                    <p>Najviše golova od stranih igraca (177)<br>Najviše golova u finalima (9)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-----checkbox sa porukom koja je omiljena legenda----->
+    <section class="legende">
+        <h2>Ko vam je omiljena legenda?</h2><br>
+    <label for="c1"> <input type="checkbox" name="legend" value="Vaša Omiljena Legenda je Petr Cech" id="c1">Petr Cech</label><br><br>
+    <label for="c2"><input type="checkbox" name="legend" value="Vaša Omiljena Legenda je Frank Lampard" id="c2">Frank Lampard</label><br><br>
+    <label for="c3"><input type="checkbox" name="legend" value="Vaša Omiljena Legenda je Didier Drogba" id="c3">Didier Drogba</label><br><br>
+    <p>
+        <button class="hero-btn2" id="btn" onclick="">POTVRDI</button>
+    </p>
+    <script src="checkboxscript.js"></script>  <!-----poziv skripte za checkbox----->
+    </section> 
+<!-----footer sa elementima o klubu kao i ikone drustvenih medija sa linkovima i potpis autora sajta----->
+    <section class="footer">
+        <h4>O Klubu</h4>
+        <p>Čelsi je engleski fudbalski klub iz Fulama, London.<br>Klub je osnovan 1905. godine i trenutno se takmiči u Premijer ligi, najvećem rangu engleskog fudbala.<br>Smatra se za jedan od najuspešnijih klubova u Engleskoj. Utakmice kao domaćin igra na stadionu Stamford bridge.</p>
+        <div class="ikona">
+            <a href="https://www.facebook.com/ChelseaFC/"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/chelseafc/?hl=en"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/chelseafc?lang=en"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCU2PacFf99vhb3hNiYDmxww"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <p>Kristijan Kečkeš SI-36/21</p>
+    </section>
+</body>
+</html>

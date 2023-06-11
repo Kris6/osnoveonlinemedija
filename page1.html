@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsea Website - Kristijan Keckes</title>
+    <link rel="stylesheet" href="style1.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!----HEADER SA MENIJEM-->
+    <section class="sub-header">
+        <nav>
+            <a href="page.html"><img src="images/Chelsea.png"></a>
+            <div class="meni" id="meniLink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="page.html">POCETNA</a></li>
+                    <li><a href="page1.html">O KLUBU</a></li>
+                    <li><a href="page2.html">VESTI</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>O Klubu Chelsea FC</h1>                         <!----NASLOV STRANICE-->
+        <script src="Hide-Show_menu.js"></script>
+    </section>
+
+    <!-----O stranica sa tekstom i slikama----->
+    <section class="about-us">
+        <div class="red1">
+            <div class="about-kol">
+                <h1>Početak "Plavaca"</h1>
+                <p> Klub je osnovan 1905. godine i trenutno se takmiči u Premijer ligi, najvećem rangu engleskog fudbala.<br>
+                    Prvu veću titulu Čelsi je osvojio 1955. godine, kada je osvojio tadašnju Prvu diviziju.<br>
+                    Plavci prvi put osvajaju FA kup 1970. i prvi evropski trofej, Kup pobednika kupova, 1971. godine.<br>
+                    Posle razdoblja neuspeha u kasnijim sedamdesetim i osamdesetim, klub se vraća uspesima tokom 90-ih<br>
+                    osvajajući par kupova.</p>
+            </div>
+            <div class="about-kol">
+                <img src="images/Oklubu1.jpg" > <!--------ova slika se menja---------->
+            </div>
+        </div>
+        <div class="red1">
+            <div class="about-kol">
+                <img id="idslika1" src="images/Oklubu2.jpg"> 
+            </div>
+            <div class="about-kol">
+                <h1>Slavni dani</h1>
+                <p>Najviše uspeha u istoriji Čelsi je imao tokom poslednje dve decenije osvojivši po pet ligaških titula, sedam FA kupova, četiri Liga kupa, dve Lige šampiona, dve Lige Evrope, dva UEFA superkupa i jedno Svetsko klupsko prvenstvo.<br>
+                    Čelsi spada u grupu od pet klubova koji su uspeli da osvoje sva tri glavna evropska klupska takmičenja kroz istoriju (Kup pobednika kupova, Ligu šampiona i Ligu Evrope).<br>
+                    Takođe je i jedini londonski klub koji je podigao pehar Lige šampiona.</p>
+            </div>
+        </div>
+        <div class="red1">
+            <div class="about-kol">
+                <h1>Najbolji klub na svetu</h1>
+                <p>Čelsi je 2021. godine konačno osvojio Svetsko klupsko prvenstvo nakon osvojene Lige šampiona ranije te godine.<br>
+                Time je i zvanično proglašen za najbolji klub sveta. Oba puta kada su osvajali najveći evropski trofej, niko nije očekivao da će to učiniti.<br>
+                To je i najveća karakteristika Čelsija, da uvek odigra najbolje u velikim utakmicama, pogotovo kada ih ljudi otpisuju.<br>
+                Ove sezone su se, međutim, mučili završivši sezonu na 12. mestu u Premijer ligi. Sa novim vlasnicima, pojavljuje se i novi Čelsi.<br>
+                Biće potrebno vremena da se ovaj projekat usavrši pa navijači moraju imati strpljenja, ali bez sumnje je da će se Čelsi vratiti na sam vrh Engleske, Evrope pa i sveta!</p>
+            </div>
+            <div class="about-kol">
+                <img id="idslika" src="images/Oklubu3.jpg">
+            </div>
+        </div>
+        <script src = "ImageChanger.js"></script>    <!--------pozivanje skripte za promenu slike------------>
+    </section>
+<!--------------------Tabela sa osvojenim trofejima-------------------->
+    <section>
+        <h1>Osvojeni trofeji</h1>
+        <div class="table-box">
+            <div class="table-row table-head">
+                <div class="table-cell">
+                    <p>TAKMICENJE</p>
+                </div>
+                <div class="table-cell">
+                    <p>TOTAL</p>
+                </div>
+                <div class="table-cell">
+                    <p>GODINE OSVAJANJA</p>
+                </div>
+            </div>
+            <div class="table-row">      <!--UEFA Champions League-->
+                <div class="table-cell">
+                    <p>UEFA Champions League</p>
+                </div>
+                <div class="table-cell">
+                    <p>2</p>
+                </div>
+                <div class="table-cell">
+                    <p>2012, 2021</p>
+                </div>
+            </div>
+            <div class="table-row">      <!--First Division/Premier League-->
+                <div class="table-cell">
+                    <p>First Division/Premier League</p>
+                </div>
+                <div class="table-cell">
+                    <p>6</p>
+                </div>
+                <div class="table-cell">
+                    <p>1955, 2005, 2006, 2010, 2015, 2017</p>                    
+                </div>
+            </div>
+            <div class="table-row">      <!--FA Cup-->
+                <div class="table-cell">
+                    <p>FA Cup</p>
+                </div>
+                <div class="table-cell">
+                    <p>8</p>
+                </div>
+                <div class="table-cell">
+                    <p>1970, 1997, 2000, 2007, 2009, 2010, 2012, 2018</p>                    
+                </div>
+            </div>
+            <div class="table-row">      <!--League Cup-->
+                <div class="table-cell">
+                    <p>League Cup</p>
+                </div>
+                <div class="table-cell">
+                    <p>5</p>
+                </div>
+                <div class="table-cell">
+                    <p>1965, 1998, 2005, 2007, 2015</p>
+                </div>
+            </div>
+            <div class="table-row">      <!--UEFA Europa League-->
+                <div class="table-cell">
+                    <p>UEFA Europa League</p>
+                </div>
+                <div class="table-cell">
+                    <p>2</p>
+                </div>
+                <div class="table-cell">
+                    <p>2013, 2019</p>                    
+                </div>
+            </div>
+            <div class="table-row">      <!--UEFA Cup Winners' Cup-->
+                <div class="table-cell">
+                    <p>UEFA Cup Winners' Cup</p>
+                </div>
+                <div class="table-cell">
+                    <p>2</p>
+                </div>
+                <div class="table-cell">
+                    <p>1971, 1998</p>                    
+                </div>
+            </div>
+            <div class="table-row">      <!--FIFA Club World Cup-->
+                <div class="table-cell">
+                    <p>FIFA Club World Cup</p>
+                </div>
+                <div class="table-cell">
+                    <p>1</p>
+                </div>
+                <div class="table-cell">
+                    <p>2021</p>
+                </div>
+            </div>
+            <div class="table-row">      <!--UEFA Super Cup-->
+                <div class="table-cell">
+                    <p>UEFA Super Cup</p>
+                </div>
+                <div class="table-cell">
+                    <p>2</p>
+                </div>
+                <div class="table-cell">
+                    <p>1998, 2021</p>                    
+                </div>
+            </div>
+            <div class="table-row">      <!--Charity/Community Shield-->
+                <div class="table-cell">
+                    <p>Charity/Community Shield</p>
+                </div>
+                <div class="table-cell">
+                    <p>4</p>
+                </div>
+                <div class="table-cell">
+                    <p>1955, 2000, 2005, 2009</p>                    
+                </div>
+            </div>
+            <div class="table-row">      <!--Full Members' Cup-->
+                <div class="table-cell">
+                    <p>Full Members' Cup</p>
+                </div>
+                <div class="table-cell">
+                    <p>2</p>
+                </div>
+                <div class="table-cell">
+                    <p>1986, 1990</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-----footer sa elementima o klubu kao i ikone drustvenih medija sa linkovima i potpis autora sajta----->
+    <section class="footer">
+        <h4>O Klubu</h4>
+        <p>Čelsi je engleski fudbalski klub iz Fulama, London.<br>Klub je osnovan 1905. godine i trenutno se takmiči u Premijer ligi, najvećem rangu engleskog fudbala.<br>Smatra se za jedan od najuspešnijih klubova u Engleskoj. Utakmice kao domaćin igra na stadionu Stamford bridge.</p>
+        <div class="ikona">
+            <a href="https://www.facebook.com/ChelseaFC/"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/chelseafc/?hl=en"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/chelseafc?lang=en"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCU2PacFf99vhb3hNiYDmxww"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <p>Kristijan Kečkeš SI-36/21</p>
+    </section>
+</body>
+</html>

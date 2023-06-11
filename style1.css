@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;   /*----ovo je za celu stranicu----*/
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image : linear-gradient(rgba(4,9,30,0.85),rgba(4,9,30,0.85)),url(images/background1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 120px;
+}
+.meni{
+    flex: 1;
+    text-align: right;
+}
+.meni ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.meni ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+.meni ul li ::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: blue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.meni ul li:hover ::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid blue;
+    background: blue;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+body{
+    background-color: rgba(232, 234, 255, 0.797);
+}
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 25px;
+    }
+    .meni ul li{
+        display: block;
+    }
+    .meni {
+        position: fixed;
+        background: rgb(0, 0, 73);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .meni ul{
+        padding: 30px;
+    }
+    .red{
+        flex-direction: column;
+    }
+    .red1{
+        flex-direction: column;
+    }
+    .table-box{
+        width: auto;
+        padding: 3px 4px;
+    }
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.red{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.red :hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.hero-btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn2:hover{
+    border: 1px solid blue;
+    background: blue;
+    transition: 1s;
+    color: white;
+}
+
+/*-----------footer----*/
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    font-size: 28px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.ikona .fa{
+    color: rgba(18, 57, 189, 0.726);
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/*-----o klubu stranica-----*/
+
+.red1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-header{
+    height: 75vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.85),rgba(4,9,30,0.85)), url(images/LS2021.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.sub-header h1{
+    margin-top: 100px;
+    font-size: 55px;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-kol{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-kol img{
+    width: 100%;
+}
+.about-kol h1{
+    padding-top: 0;
+    color: rgb(8, 8, 146);
+}
+.about-kol p{
+    padding: 60px 0 25px;
+    font-size: 20px;
+}
+/*-----okvir slika i senka preko id-a-----*/
+#idslika{
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#idslika1 {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*-----o klubu TABELA-----*/
+
+.table-box{
+    margin: 50px auto;
+}
+.table-row{
+    display: table;
+    width: 70%;
+    margin: 10px auto;
+    background: transparent;
+    padding: 12px 0;
+    color: gray;
+    font-size: 13px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+    transition: 0.5s;
+}
+.table-cell{
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+    padding: 4px 0;
+    border-right: 1px solid white;
+    vertical-align: middle;
+}
+.table-cell p{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(8, 8, 146);
+    font-family: 'Lilita One', cursive;
+}
+.table-head{
+    background: rgb(8, 8, 146);
+    box-shadow: none;
+}
+.table-head p{
+    font-weight: 600;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+/*-----hover efekat za senku u tabeli-----*/
+.table-box :hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 50, 0.9);
+}
+.table-head :hover{
+    box-shadow: none;
+}
+.table-row :hover{
+    box-shadow: none;
+}
